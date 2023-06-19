@@ -1,22 +1,21 @@
 import streamlit as st
 import pandas as pd
 from tensorflow.keras.models import load_model
-from dfs.preprecessing import preprocess
 from googletrans import Translator
 from vncorenlp import VnCoreNLP
 from itertools import chain
 import re
 from unidecode import unidecode
 
-cities_lst = pd.read_csv('./data/provinces.csv').Provinces
-industries_lst = pd.read_csv('./data/job_labels.csv')['0']
-levels_lst = pd.read_csv('./data/levels.csv').name
+cities_lst = pd.read_csv('data/provinces.csv').Provinces
+industries_lst = pd.read_csv('data/job_labels.csv')['0']
+levels_lst = pd.read_csv('data/levels.csv').name
 dict_job = dict(industries_lst)
 
-Path1 = './model/XLMBert_bGRU.h5'
-Path2 = './model/XLMBert_bLSTM.h5'
-Path3 = './model/XLMBert_customized.h5'
-Path4 = './model/XLMBert_TextCNN.h5'
+Path1 = 'model/XLMBert_bGRU.h5'
+Path2 = 'model/XLMBert_bLSTM.h5'
+Path3 = 'model/XLMBert_customized.h5'
+Path4 = 'model/XLMBert_TextCNN.h5'
 
 tags_index = []
 tags = []
