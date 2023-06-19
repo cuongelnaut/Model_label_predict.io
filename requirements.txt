@@ -49,5 +49,5 @@ zipp==3.15.0
 underthesea==6.2.0
 transformers==4.24.0
 Unidecode==1.2.0
-tensorflow
+tensorflow==2.2.0
 tqdm==4.64.1
