@@ -49,8 +49,8 @@ zipp==3.15.0
 underthesea==6.2.0
 transformers==4.24.0
 Unidecode==1.2.0
-tensorflow
+tensorflow==2.12.0
 tqdm==4.64.1
-re
-torch
-pickle
+regex==2023.5.5
+torch==2.0.1
+pickleshare==0.7.5
